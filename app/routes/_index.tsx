@@ -8,8 +8,11 @@ import QuestionsForm from "../components/QuestionsForm";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Project Setup Guide" },
+    {
+      name: "description",
+      content: "Suggestions for setting up a project that uses React",
+    },
   ];
 };
 
