@@ -9,7 +9,7 @@ export default function Answers() {
   const stateManagement = searchParams.get(QUESTION_KEYS.stateManagement);
   const api = searchParams.get(QUESTION_KEYS.api);
   const css = searchParams.get(QUESTION_KEYS.css);
-  const componentLibrary = searchParams.get(QUESTION_KEYS.componentLibrary);
+  const components = searchParams.get(QUESTION_KEYS.components);
 
   const answers: { [key in keyof typeof QUESTION_KEYS]: string | null } = {
     frameworkLibrary,
@@ -17,7 +17,7 @@ export default function Answers() {
     stateManagement,
     api,
     css,
-    componentLibrary,
+    components,
   };
 
   return (
@@ -46,7 +46,7 @@ export default function Answers() {
                     </ExternalLink>
                   );
                 }
-              } else if (item.name === "componentLibrary" && answer === "Yes") {
+              } else if (item.name === "components" && answer === "Yes") {
                 if (answers.css === "Yes") {
                   suggestions = (
                     <ul>

@@ -6,7 +6,7 @@ export const QUESTION_KEYS = {
   stateManagement: "stateManagement",
   api: "api",
   css: "css",
-  componentLibrary: "componentLibrary",
+  components: "components",
 } as const;
 
 export const STEPS = [
@@ -51,7 +51,7 @@ export const STEPS = [
   },
   {
     name: QUESTION_KEYS.stateManagement,
-    title: "State management",
+    title: "State Management",
     question: "Which library you would like to use for state management?",
     options: [
       {
@@ -126,8 +126,8 @@ export const STEPS = [
     ],
   },
   {
-    name: QUESTION_KEYS.componentLibrary,
-    title: "Design System",
+    name: QUESTION_KEYS.components,
+    title: "Components",
     question: "Do you want to use a component library?",
     options: [
       {
