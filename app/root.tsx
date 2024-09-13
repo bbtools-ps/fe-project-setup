@@ -5,8 +5,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import bgImage from "../public/images/bg.png";
 import ExternalLink from "./components/ExternalLink";
-import bgImage from "./images/bg.png";
 import "./tailwind.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
