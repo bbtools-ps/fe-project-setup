@@ -1,8 +1,19 @@
+import { type MetaFunction } from "@remix-run/node";
 import { Link, useSearchParams } from "@remix-run/react";
 import ExternalLink from "~/components/ExternalLink";
 import { QUESTION_KEYS, STEPS } from "~/constants";
 
-export default function Answers() {
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Suggestions" },
+    {
+      name: "description",
+      content: "Suggestions for setting up a project that uses React",
+    },
+  ];
+};
+
+export default function SuggestionsPage() {
   const [searchParams] = useSearchParams();
   const frameworkLibrary = searchParams.get(QUESTION_KEYS.frameworkLibrary);
   const clientServer = searchParams.get(QUESTION_KEYS.clientServer);
