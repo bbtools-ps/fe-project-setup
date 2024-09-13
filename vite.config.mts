@@ -2,6 +2,7 @@ import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
 import { vitePlugin as remix } from "@remix-run/dev";
 import path from "path";
 import { defineConfig } from "vite";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
   plugins: [
@@ -13,6 +14,7 @@ export default defineConfig({
       },
     }),
     netlifyPlugin(),
+    ViteImageOptimizer(),
   ],
   resolve: {
     alias: {
