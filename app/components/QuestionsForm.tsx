@@ -25,7 +25,7 @@ export default function QuestionsForm() {
           <Fragment key={index}>
             <h2
               className={isHidden ? "hidden-element" : undefined}
-              aria-hidden={isHidden}
+              aria-hidden={isHidden ? "true" : undefined}
             >
               {item.title}
             </h2>
@@ -35,7 +35,7 @@ export default function QuestionsForm() {
                   ? "hidden-element"
                   : "mb-10 flex flex-col gap-2 text-xl"
               }
-              aria-hidden={isHidden}
+              aria-hidden={isHidden ? "true" : undefined}
             >
               <fieldset>
                 <legend className="mb-4">{item.question}</legend>

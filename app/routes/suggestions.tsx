@@ -105,8 +105,8 @@ export default function SuggestionsPage() {
               )?.alternatives;
 
               return (
-                <div key={index} className="text-lg">
-                  <p className="text-xl italic">{item.question}</p>
+                <article key={index} className="text-lg">
+                  <h2 className="text-left text-xl italic">{item.question}</h2>
                   <p>
                     Your answer: <strong>{answer}</strong>
                   </p>
@@ -122,7 +122,7 @@ export default function SuggestionsPage() {
                       {alternatives}
                     </>
                   )}
-                </div>
+                </article>
               );
             })}
           </div>
