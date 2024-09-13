@@ -46,7 +46,6 @@ export default function QuestionsForm() {
                         type="radio"
                         name={item.name}
                         id={`${item.name}-${index}`}
-                        className="mr-2"
                         defaultChecked={index === 0}
                         defaultValue={value}
                         tabIndex={isHidden ? -1 : undefined}
@@ -54,6 +53,7 @@ export default function QuestionsForm() {
                       <label
                         tabIndex={isHidden ? -1 : undefined}
                         htmlFor={`${item.name}-${index}`}
+                        className="pl-2"
                       >
                         {value}
                       </label>
