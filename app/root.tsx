@@ -5,7 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import bgImage from "../public/images/bg.webp";
+import bgImage from "~/images/bg.webp";
 import ExternalLink from "./components/ExternalLink";
 import "./tailwind.css";
 
