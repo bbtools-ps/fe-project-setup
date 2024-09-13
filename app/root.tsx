@@ -21,7 +21,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <footer>
-          <div className="relative z-10 my-7 w-full text-center text-white">
+          <div className="my-7 w-full text-center text-white">
             <p>
               &copy;{" "}
               <ExternalLink href="https://bogdan-bogdanovic.com/">
@@ -50,7 +50,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <img
             alt="Background"
             src={bgImage}
-            className="fixed inset-0 h-full w-full object-cover"
+            className="fixed inset-0 -z-10 h-full w-full object-cover"
           />
         </footer>
         <ScrollRestoration />

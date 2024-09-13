@@ -19,10 +19,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <header className="z-10">
+      <header>
         <h1>Project Setup Guide</h1>
       </header>
-      <main className="z-10 flex flex-1 flex-col items-center px-4">
+      <main className="flex flex-1 flex-col items-center px-4">
         <QuestionsForm />
       </main>
     </>

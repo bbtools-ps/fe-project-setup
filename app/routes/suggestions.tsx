@@ -33,11 +33,11 @@ export default function SuggestionsPage() {
 
   return (
     <>
-      <header className="z-10">
+      <header>
         <h1>Suggestions</h1>
       </header>
-      <main className="z-10 flex flex-1 flex-col items-center px-4">
-        <div className="animate-fade w-full rounded-2xl border border-slate-600 bg-slate-800 p-4 shadow-lg md:max-w-xl lg:max-w-3xl">
+      <main className="flex flex-1 flex-col items-center px-4">
+        <div className="w-full animate-fade rounded-2xl border border-slate-600 bg-slate-800 p-4 shadow-lg md:max-w-xl lg:max-w-3xl">
           <div className="mb-10 flex flex-col gap-14">
             {STEPS.map((item, index) => {
               const answer = answers[item.name];
