@@ -5,6 +5,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import ExternalLink from "./components/ExternalLink";
+import bgImage from "./images/bg.png";
 import "./tailwind.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -16,8 +18,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ backgroundImage: "url('.images/header.png')" }}>
         {children}
+        <footer>
+          <div className="relative z-10 my-7 w-full text-center text-white">
+            <ExternalLink href="https://bogdan-bogdanovic.com/">
+              Bogdan Bogdanovic
+            </ExternalLink>
+          </div>
+          <img
+            alt="Background"
+            src={bgImage}
+            className="fixed inset-0 h-full w-full object-cover"
+          />
+        </footer>
         <ScrollRestoration />
         <Scripts />
       </body>

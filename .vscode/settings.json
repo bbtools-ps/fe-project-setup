@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  }
+}
