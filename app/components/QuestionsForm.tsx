@@ -16,7 +16,7 @@ export default function QuestionsForm() {
   return (
     <Form
       method="post"
-      className="animate-fade w-full rounded-2xl border border-slate-600 bg-slate-800 p-4 shadow-lg md:max-w-xl lg:max-w-3xl"
+      className="w-full animate-fade rounded-2xl border border-slate-600 bg-slate-800 p-4 shadow-lg md:max-w-xl lg:max-w-3xl"
     >
       {STEPS.map((item, index, self) => {
         const isHidden = index !== step;
@@ -94,7 +94,7 @@ export default function QuestionsForm() {
                     : "hidden"
                 }
               >
-                Submit
+                Finish
               </button>
             </div>
           </Fragment>
