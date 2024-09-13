@@ -18,7 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body style={{ backgroundImage: "url('.images/header.png')" }}>
+      <body>
         {children}
         <footer>
           <div className="relative z-10 my-7 w-full text-center text-white">
