@@ -5,7 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import bgImage from "../public/images/bg.png";
+import bgImage from "../public/images/bg.webp";
 import ExternalLink from "./components/ExternalLink";
 import "./tailwind.css";
 
@@ -50,8 +50,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <img
             alt="Background"
             src={bgImage}
-            className="fixed inset-0 -z-10 h-full w-full object-cover"
+            className="fixed inset-0 -z-10 h-full w-full object-cover blur"
           />
+          <div className="fixed inset-0 -z-20 bg-black" />
         </footer>
         <ScrollRestoration />
         <Scripts />
