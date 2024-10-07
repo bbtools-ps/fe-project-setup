@@ -18,7 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-black">
         {children}
         <footer>
           <div className="my-7 w-full text-center text-white">
