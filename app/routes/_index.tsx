@@ -31,9 +31,10 @@ export default function Index() {
 
 export const action: ActionFunction = async ({ request }) => {
   const formData = await request.formData();
-  const data = Object.fromEntries(formData.entries()) as {
-    [key in keyof typeof QUESTION_KEYS]: string;
-  };
+  const data = Object.fromEntries(formData.entries()) as Record<
+    keyof typeof QUESTION_KEYS,
+    string
+  >;
 
   const searchParams = Object.entries(data)
     .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)

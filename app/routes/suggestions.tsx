@@ -22,7 +22,7 @@ export default function SuggestionsPage() {
   const css = searchParams.get(QUESTION_KEYS.css);
   const components = searchParams.get(QUESTION_KEYS.components);
 
-  const answers: { [key in keyof typeof QUESTION_KEYS]: string | null } = {
+  const answers: Record<keyof typeof QUESTION_KEYS, string | null> = {
     frameworkLibrary,
     clientServer,
     stateManagement,
