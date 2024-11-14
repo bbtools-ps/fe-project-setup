@@ -8,7 +8,7 @@ export default function ExternalLink({ href, children }: IProps) {
     <a
       href={href}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       className="underline underline-offset-4 hover:no-underline"
     >
       {children}

@@ -31,9 +31,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <p>
               <a
                 href="https://github.com/bbtools-ps/fe-project-setup"
-                className="mx-auto mt-4 inline-block"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                className="mx-auto mt-4 inline-block"
               >
                 <svg
                   className="h-7 w-7 fill-white"
