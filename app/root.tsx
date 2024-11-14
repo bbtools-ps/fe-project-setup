@@ -48,7 +48,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </p>
           </div>
           <img
-            alt="Background"
+            alt=""
             src={bgImage}
             className="fixed inset-0 -z-10 h-full w-full object-cover blur"
           />
