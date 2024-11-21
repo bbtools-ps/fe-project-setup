@@ -47,13 +47,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </a>
             </p>
           </div>
-          <div className="fixed inset-0 -z-20 bg-black" />
         </footer>
-        <img
-          alt=""
-          src={bgImage}
-          className="fixed inset-0 -z-10 h-full w-full object-cover blur"
-        />
+        <div className="fixed inset-0 -z-10 bg-black">
+          <img
+            alt=""
+            src={bgImage}
+            className="h-full w-full object-cover blur"
+          />
+        </div>
+
         <ScrollRestoration />
         <Scripts />
       </body>
