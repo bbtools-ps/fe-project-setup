@@ -1,16 +1,7 @@
+# TODO(serhalp) Remove entire file when we've added RR7 framework detection
 [build]
-command = "npm run build"
+command = "react-router build"
 publish = "build/client"
 
 [dev]
-command = "npm run dev"
-framework = "vite"
-
-# Set immutable caching for static files, because they have fingerprinted filenames
-
-[[headers]]
-for = "/build/*"
-
-[headers.values]
-
-"Cache-Control" = "public, max-age=31560000, immutable"
+command = "react-router dev"
