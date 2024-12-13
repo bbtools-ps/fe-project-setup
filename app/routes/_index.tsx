@@ -1,8 +1,4 @@
-import {
-  redirect,
-  type ActionFunction,
-  type MetaFunction,
-} from "@remix-run/node";
+import { redirect, type ActionFunction, type MetaFunction } from "react-router";
 import type { QUESTION_KEYS } from "~/constants";
 import QuestionsForm from "../components/QuestionsForm";
 

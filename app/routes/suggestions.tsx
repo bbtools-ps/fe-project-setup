@@ -1,5 +1,4 @@
-import { type MetaFunction } from "@remix-run/node";
-import { Link, useSearchParams } from "@remix-run/react";
+import { Link, useSearchParams, type MetaFunction } from "react-router";
 import ExternalLink from "~/components/ExternalLink";
 import { QUESTION_KEYS, STEPS } from "~/constants";
 

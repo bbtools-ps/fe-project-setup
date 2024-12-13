@@ -1,10 +1,4 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import bgImage from "~/images/bg.webp";
 import ExternalLink from "./components/ExternalLink";
 import "./tailwind.css";
