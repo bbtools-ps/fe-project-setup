@@ -1,5 +1,6 @@
-import { redirect, type ActionFunction, type MetaFunction } from "react-router";
+import { redirect, type MetaFunction } from "react-router";
 import type { QUESTION_KEYS } from "~/constants";
+import type { Route } from "../+types/root";
 import QuestionsForm from "../components/QuestionsForm";
 
 export const meta: MetaFunction = () => {
@@ -25,7 +26,7 @@ export default function Index() {
   );
 }
 
-export const action: ActionFunction = async ({ request }) => {
+export const action = async ({ request }: Route.ActionArgs) => {
   const formData = await request.formData();
   const data = Object.fromEntries(formData.entries()) as Record<
     keyof typeof QUESTION_KEYS,
