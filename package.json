@@ -9,7 +9,8 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "netlify serve",
     "typecheck": "react-router typegen && tsc",
-    "fix": "eslint --fix app"
+    "fix": "eslint --fix app",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@react-router/fs-routes": "^7.0.2",
